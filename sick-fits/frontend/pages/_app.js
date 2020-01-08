@@ -1,18 +1,20 @@
-import App, { Container } from "next/app";
-import Page from "../components/Page";
+import App, { Container } from 'next/app';
+import Page from '../components/Page';
 
 class MyApp extends App {
-  render() {
-    const { Component } = this.props;
+	render() {
+		const { Component } = this.props;
 
-    return (
-      <Container>
-        <Page>
-          <Component />
-        </Page>
-      </Container>
-    );
-  }
+		return (
+			<div>
+				<Container>
+					<Page>
+						<Component />
+					</Page>
+				</Container>
+			</div>
+		);
+	}
 }
 
 export default MyApp;
